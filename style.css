@@ -1,9 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body{
+    background-image: url("images/background.jpg");
+    background-size: cover;
+    font-family: 'Titillium Web', sans-serif;
+    color: #fff;
+}
+
+.content {
+    margin: 2rem;
+    padding: 2rem;
+    text-align: center;
+    background-color: #15418ccc;
+}
+
+.content-info{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+h1{
+    font-size: 3.5em;
+}
+
+label {
+    font-size: 1.5em;
+}
+
+input[type="date"]{
+    font-family: 'Titillium Web', sans-serif;
+    padding: 5px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input::-webkit-calendar-picker-indicator:hover {
+    background: transparent;
+    cursor: pointer;
+}
+
+#btn{
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: bold;
+    width: 5em;
+    padding: 0.5em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#btn:hover{
+    background-color: #fb3d22cc;
+    transition-duration: 1.5s;
+    color:#fff
+}
+
 img, iframe{
     display: none;
+    width: 30%;
+    height: 30vh;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 760px){
+  h1{
+      font-size: 1.5rem;
+  }
+  label{
+      font-size: 1em;
+  }
 }

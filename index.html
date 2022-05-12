@@ -7,22 +7,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Apod</title>
+    <link rel="icon" type="image/x-icon" href="/images/nasa-logo.svg">
 </head>
 
 <body>
     <main>
-        
-        <form>
-            <h1>Imagem Astronômica do dia</h1>
-            <label for="data">Informe a data:</label>
-            <input id="data" type="date" min="2015-01-01">
-            <input type="submit" id="btn" for="data">
+
+        <form class="content">
+            <h1>Imagem Astronômica do Dia</h1>
+            <div class="content-info">
+                <label for="data">Informe a data:</label>
+                <input id="data" type="date" min="2015-01-01" required>
+                <input type="submit" id="btn" for="data">
+            </div>
         </form>
-        <section class="info">
-            <img id="img" src="">
+
+        <picture id="#resultado">
+            <img id="img" alt="imagem-nasa" style="text-align: center;" src="">
             <iframe id="video" src=""></iframe>
-            <div></div>
-        </section>
+        </picture>
+
+        <div id="msg-erro"></div>
+
     </main>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="script.js"></script>
