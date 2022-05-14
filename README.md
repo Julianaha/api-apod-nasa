@@ -6,7 +6,7 @@ Projeto onde desenvolvi uma aplicação capaz de realizar uma requisição para 
 
 ● Aplicação capaz de receber uma data como entrada do usuário a partir de um formulário.
 
-● Com a data selecionada, ao clicar no botão de envio, uma requisição deve ser enviada à [API da APOD](https://api.nasa.gov/planetary/apod ) para que seja obtida a foto ou vídeo referente ao dia escolhido.
+● Com a data selecionada, ao clicar no botão de envio, uma requisição deve ser enviada à [API da APOD](https://api.nasa.gov/) para que seja obtida a foto ou vídeo referente ao dia escolhido.
 
 ● De posse dessa informação, a página deve ser manipulada para que os dados retornados sejam devidamente exibidos.
 
