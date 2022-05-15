@@ -3,6 +3,7 @@
 *{
     margin: 0;
     padding: 0;
+    text-decoration: none;
     box-sizing: border-box;
 }
 
@@ -66,18 +67,30 @@ input::-webkit-calendar-picker-indicator:hover {
     color:#fff
 }
 
+picture {
+    width: 50%;
+}
 img, iframe{
     display: none;
-    width: 30%;
-    height: 30vh;
+    object-fit: cover;
     margin: 0 auto;
+}
+
+.texto{
+    margin: 2rem;
 }
 
 @media screen and (max-width: 760px){
   h1{
       font-size: 1.5rem;
   }
+
   label{
       font-size: 1em;
   }
+
+  .texto{
+      margin: 10px;
+  }
+
 }
